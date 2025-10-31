@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Billing Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>☁️ Cloud Billing Dashboard</h1>
+  </header>
+
+  <section class="controls">
+    <select id="provider">
+      <option value="aws">AWS</option>
+      <option value="azure">Azure</option>
+    </select>
+    <button id="fetchData">Fetch Billing Data</button>
+  </section>
+
+  <section class="chart-section">
+    <canvas id="billingChart"></canvas>
+  </section>
+
+  <section id="summary"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
